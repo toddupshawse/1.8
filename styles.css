@@ -1,55 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e1e2f, #363657);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-}
+const homeMsg = "You selected the Home address";
+const workMsg = "You selected the Work address";
 
-.card {
-    background: #2a2a3d;
-    padding: 30px;
-    width: 380px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.4);
-    text-align: center;
-    animation: fadeIn 1.2s ease;
-}
+document.getElementById("homeoption").addEventListener("click", function() {
+    alert(homeMsg);
+    document.getElementById("streetinput").value = "100 Main St.";
+    document.getElementById("cityinput").value = "Sicilia";
+    document.getElementById("stateinput").value = "MA";
+    document.getElementById("zipinput").value = "02103";
+});
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-
-h2 {
-    font-size: 16px;
-    color: #a8a8ff;
-    margin-bottom: 25px;
-}
-
-.options {
-    margin-bottom: 20px;
-}
-
-.options label {
-    display: block;
-    margin: 10px 0;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.fields input {
-    width: 90%;
-    padding: 10px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 8px;
-    background: #3a3a50;
-    color: #fff;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+document.getElementById("workoption").addEventListener("click", function() {
+    alert(workMsg);
+    document.getElementById("streetinput").value = "123 Robin Ln.";
+    document.getElementById("cityinput").value = "Crab City";
+    document.getElementById("stateinput").value = "MA";
+    document.getElementById("zipinput").value = "02104";
+});
