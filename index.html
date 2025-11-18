@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Variables and Alerts</title>
-<link rel="stylesheet" href="styles.css">
-<script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & Alerts - Todd (todups0960)</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<h1>Des - Variables and Alerts</h1>
-</header>
-<article>
-<h2>Shipping Address</h2>
-<form>
-<fieldset id="addroptions">
-<legend>Choose an address</legend>
-<label>
-<input type="radio" name="shippingaddr" id="homeoption">
-Home<br>
-100 Main St.<br>
-Sicilia, MA 02103
-</label>
-<label>
-<input type="radio" name="shippingaddr" id="workoption">
-Work<br>
-123 Robin Ln.<br>
-Crab City, MA 02104
-</label>
-</fieldset>
-<fieldset id="contactinfo">
-<label>
-Street Address
-<input type="text" id="streetinput">
-</label>
-<label>
-City
-<input type="text" id="cityinput">
-</label>
-<label>
-State
-<input type="text" id="stateinput">
-</label>
-<label>
-Zip
-<input type="text" id="zipinput">
-</label>
-</fieldset>
-</form>
-</article>
+
+    <div class="card">
+        <h1>Variables & Alerts Project</h1>
+        <h2>Todd — Student ID: todups0960</h2>
+
+        <p>Select an address option below:</p>
+
+        <div class="options">
+            <label>
+                <input type="radio" name="address" id="homeRadio">
+                Home Address
+            </label>
+
+            <label>
+                <input type="radio" name="address" id="workRadio">
+                Work Address
+            </label>
+        </div>
+
+        <div class="fields">
+            <input type="text" id="street" placeholder="Street">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="state" placeholder="State">
+            <input type="text" id="zip" placeholder="Zip Code">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
