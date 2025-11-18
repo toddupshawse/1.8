@@ -1,20 +1,23 @@
-let homeMsg = "You selected the Home address";
-let workMsg = "You selected the Work address";
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-document.getElementById("homeRadio").addEventListener("click", function () {
-    alert(homeMsg);
+header h1 {
+    text-align: center;
+}
 
-    document.getElementById("street").value = "100 Main St.";
-    document.getElementById("city").value = "Virginia Beach";
-    document.getElementById("state").value = "VA";
-    document.getElementById("zip").value = "23450";
-});
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
 
-document.getElementById("workRadio").addEventListener("click", function () {
-    alert(workMsg);
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+}
 
-    document.getElementById("street").value = "500 Business Plaza";
-    document.getElementById("city").value = "Norfolk";
-    document.getElementById("state").value = "VA";
-    document.getElementById("zip").value = "23510";
-});
+label {
+    display: block;
+    margin-bottom: 10px;
+}
